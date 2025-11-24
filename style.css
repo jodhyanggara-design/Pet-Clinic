@@ -1,0 +1,201 @@
+/* Gaya Dasar dan Font (Tidak berubah) */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); 
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #ff9800;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* Progress Bar (Tab) (Tidak berubah) */
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.step {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px 5px;
+    border-bottom: 4px solid #ccc;
+    color: #888;
+    font-weight: 600;
+    transition: all 0.3s;
+    cursor: default;
+}
+
+.step.active {
+    border-color: #4CAF50;
+    color: #4CAF50;
+}
+
+/* Form Styling (Tidak Berubah) */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #f9f9f9;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Tombol (Colorful) (Tidak Berubah) */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-right: 10px;
+}
+
+.next-btn, .submit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.prev-btn {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.reset-btn {
+    background-color: #007bff;
+    color: white;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* Layout Responsif Kolom (Tidak Berubah) */
+.form-group.row {
+    display: flex;
+    gap: 20px;
+}
+
+.col-half {
+    flex: 1;
+}
+
+.col-third {
+    flex: 1 1 30%;
+}
+
+.col-quarter {
+    flex: 1 1 20%;
+}
+
+/* Tabel Styling */
+.table-responsive {
+    /* Mengizinkan scroll horizontal untuk melihat semua kolom */
+    overflow-x: auto; 
+    max-width: 100%; 
+}
+
+#rekam-medik-table {
+    /* Atur lebar minimal agar header terlihat jelas */
+    min-width: 1500px; 
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#rekam-medik-table th, #rekam-medik-table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: left;
+    /* Atur lebar kolom agar proporsional */
+    width: auto; 
+}
+
+#rekam-medik-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px; /* Perkecil font untuk header */
+    vertical-align: top;
+}
+
+#rekam-medik-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+#rekam-medik-table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Pesan Error (Tidak Berubah) */
+.error-message {
+    color: #dc3545;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+}
